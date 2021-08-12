@@ -1,12 +1,13 @@
 #!/usr/local/bin/python3
 
+import os
+
 import discord
 from bot_config import *
-from bot_token import *
 from logic import *
 
 client = discord.Client()
-
+dToken = os.environ.get('TOKEN')
 activeRaids = dict()
 
 
